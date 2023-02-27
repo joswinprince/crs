@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:SPONSOR-{#####}",
+ "creation": "2023-02-07 23:23:11.951566",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sponsor_first_name",
+  "sponsor_last_name",
+  "user_id",
+  "sponsor_address",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "sponsor_first_name",
+   "fieldtype": "Data",
+   "label": "Sponsor First Name"
+  },
+  {
+   "fieldname": "sponsor_last_name",
+   "fieldtype": "Data",
+   "label": "Sponsor Last Name"
+  },
+  {
+   "fieldname": "user_id",
+   "fieldtype": "Link",
+   "label": "User ID",
+   "options": "User"
+  },
+  {
+   "fieldname": "sponsor_address",
+   "fieldtype": "Text",
+   "label": "Sponsor Address"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Sponsor Contact",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-02-07 23:25:24.420828",
+ "modified_by": "Administrator",
+ "module": "crs",
+ "name": "Sponsor Contact",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
